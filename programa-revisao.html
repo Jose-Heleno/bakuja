@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de Conteúdo</title>
+</head>
+    <body>
+        <h2>Nossas Idades Familia Silva</h2>
+        <p id="idade">Essa é a idades das criaças e do papai.</p>
+        <button type="button" onclick='document.getElementById("idade").innerHTML="Esquecemos da mamãe!!!"'>Aperte</button>
+        <br>
+        <br>
+        <script>
+            
+            function pulaLinha() {
+                document.write("<br>");
+                document.write("<br>");
+            }
+            function mostra (frase) {
+                document.write(frase);
+                pulaLinha();
+            }
+
+            let ano = 2026;
+
+            mostra("José nasceu em " + (ano-1981) + " anos.");
+            mostra("Joaquim nasceu em " + (ano - 2013) + " anos.");
+
+            ano = 2024;
+            mostra("Catharina nasceu em " + (ano-2015) + " anos.");
+
+          
+            var idadeJose = ano-1981;
+            var idadeJoaquim = ano-2013;
+            var idadeCatharina = ano-2015;
+            var media = (idadeJose+idadeJoaquim+idadeCatharina)/3; 
+            
+            mostra("A mé    dia das nossas idades são: " + Math.round(media) + ".");
+        
+
+        </script>   
+    </body>
+</html>
