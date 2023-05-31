@@ -6,33 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cript.css">
-    <title>Decodificador</title>
+    
+    <title>Decodificador Challenger ONE/Alura</title>    
 </head>
-<body> 
+<body>
+
     <header>
-        <img class="logo" src="./imagens/logoAlura.png" alt="Logo Alura">
-        
+        <img class="logo" src="imagens/logoAlura.png" alt="Logo Alura">
     </header>
+    
     <main>
-        <section>
-            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
-            <div>
-                <h6 class="informacao" src="./imagens/Vector.png" alt="Vector Logo">Apenas letras minúsculas sem acentos.</h6>
+        <section class="section1">
+            
+            <div class="conteudo-textoarea">
+                <textarea placeholder="Digite seu texto aqui" class="text-area"></textarea>
             </div>
-           
-            <div class="botoes">
-                <button class="btn-encriptar">Criptografar</button>
-                <button class="btn-desencriptar">Descriptografar</button>
+            
+            <div class="img-informacao">
+                <img src="imagens/Vector.png" alt="Logo Vector">
+            </div>
+            <div class="informacao">    
+                <p>apenas letras minúsculas sem acentos.</p>
+            </div>          
+            
+            <div  class="botoes">
+                <input type="button" class="btn-encriptar" value="Criptografar">
+                <input type="button" class="btn-desencriptar" value="Descriptografar">            
             </div>
 
         </section>
     
-        <section>
-            <textarea class="mensagem" cols="20" rows="10">Digite um texto que você deseja criptografar ou descriptografar.</textarea>
-            <button class="btn-copiar">Copiar</button>
+        <section class="section2">
+            
+            <div class="img-mensagem">
+                <img src="imagens/boneco.png" alt="boneco">
+            </div>
+
+            <div class = mensagem>
+                <h3>Nenhuma mensagem<br>encontrada</h3>
+                <p>Digite um texto que você deseja<br>criptografar ou descriptografar.</p>
+            </div>
+            
+            <div class = "botao-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+
+            <div class="conteudo-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+
         </section>
     </main>
+    <scrip src="cript.js"></scrip>
 </body>
 </html>
