@@ -1,0 +1,314 @@
+Nesta aula, aprendemos:
+
+A ajustar a página principal para utilizar os mesmos padrões da página de produtos
+Medidas proporcionais com CSS
+Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS
+Como limpar o float, com a propriedade clear do CSS
+
+1) Caso você não tenha feito o treinamento anterior ou não tenha mais o projeto, e ainda não o baixou, faça o seu download aqui.
+
+2) Na página index.html, remova a importação do CSS style-home.css e importe os CSSs reset.css e style.css no seu lugar:
+
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">COPIAR CÓDIGO
+3) Ainda na página index.html, remova o seu cabeçalho (tag <header> e o seu conteúdo) e utilize o mesmo cabeçalho da página produto.html:
+
+<header>
+    <div class="caixa">
+        <h1><img src="logo.png"></h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>COPIAR CÓDIGO
+4) Adicione também um rodapé na página index.html, o mesmo da página produtos.html. Antes de fechar o body (tag </body>), acrescente:
+
+<footer>
+    <img src="logo-branco.png">
+    <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+</footer>COPIAR CÓDIGO
+5) Modifique o atributo id da imagem banner.jpg para passar a ser class:
+
+<img class="banner" src="banner.jpg">COPIAR CÓDIGO
+6) Agora, substitua as duas divs com as classes principal e beneficios por duas sections:
+
+<section class="principal">
+    <!-- Conteúdo da section ocultado -->
+</section>
+
+<section class="beneficios">
+    <!-- Conteúdo da section ocultado -->
+</section>COPIAR CÓDIGO
+7) Modifique as classes titulo-centralizado para passar a ser titulo-principal:
+
+<section class="principal">
+    <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+    <!-- Restante do conteúdo da section ocultado -->
+</section>
+
+<section class="beneficios">
+    <h3 class="titulo-principal">Benefícios</h3>
+    <!-- Restante do conteúdo da section ocultado -->
+</section>COPIAR CÓDIGO
+8) Abaixo do título Sobre a Barbearia Alura, adicione a imagem utensilios.jpg:
+
+<section class="principal">
+    <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+    <img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro.">
+    <!-- Restante do conteúdo da section ocultado -->
+</section>COPIAR CÓDIGO
+9) Por fim, envolva as duas sections em uma tag main:
+
+<main>
+    <section class="principal">
+        <!-- Conteúdo da section ocultado -->
+    </section>
+
+    <section class="beneficios">
+        <!-- Conteúdo da section ocultado -->
+    </section>
+</main>COPIAR CÓDIGO
+10) No arquivo style.css, adicione os estilos da página inicial:
+
+/* css da página inicial */
+.banner {
+    width:100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.imagembeneficios {
+    width: 60%;
+}
+
+Nesta aula, aprendemos:
+
+A utilizar fontes externas nas nossas páginas
+Como incorporar um mapa à nossa página
+Como incorporar um vídeo à nossa página
+
+1) Na página index.html, como último elemento do head, importe o CSS da fonte Montserrat:
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">COPIAR CÓDIGO
+2) Agora, entre a section principal e a section beneficios, crie a section mapa, incorporando o mapa com a localização da Barbearia Alura:
+
+<section class="mapa">
+    <h3 class="titulo-principal">Nosso estabelecimento</h3>
+    <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>COPIAR CÓDIGO
+3) Dentro da section beneficios, após a imagem beneficios.jpg, incorpore um vídeo de exemplo da Barbearia Alura:
+
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>COPIAR CÓDIGO
+4) No arquivo style.css, na primeira linha, estilize todo o body para utilizar a fonte importada no primeiro passo:
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}COPIAR CÓDIGO
+5) Por fim, ajuste os espaçamentos e os estilos do mapa e do vídeo:
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+Nesta aula, aprendemos:
+
+A melhorar mais ainda a semântica da página principal, com novas divisões, classes, etc
+Novas pseudo-classes
+Como aplicar um background gradiente na página
+Pseudo-elementos
+
+
+1) Na página index.html, envolva a lista de benefícios em uma div, adicione uma classe à ul e acrescente mais benefícios na lista. Além disso, coloque a imagem de benefícios na mesma linha que o fechamento da ul (classe </ul>) e altere a sua classe para imagem-beneficios:
+
+<div class="conteudo-beneficios">
+    <ul class="lista-beneficios">
+        <li class="itens">Atendimento aos Clientes</li>
+        <li class="itens">Espaço diferenciado</li>
+        <li class="itens">Localização</li>
+        <li class="itens">Profissionais Qualificados</li>
+        <li class="itens">Pontualidade</li>
+        <li class="itens">Limpeza</li>
+    </ul><img src="beneficios.jpg" class="imagem-beneficios">
+</div>COPIAR CÓDIGO
+2) Envolva também o mapa em uma div:
+
+<div class="mapa-conteudo">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>COPIAR CÓDIGO
+3) Em style.css, remova os estilos do main:
+
+main {
+
+}COPIAR CÓDIGO
+4) Além disso, adicione os estilos dos benefícios:
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}COPIAR CÓDIGO
+5) Altere a margin do video para 2em:
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}COPIAR CÓDIGO
+6) Estilize a div do mapa e a section principal:
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}COPIAR CÓDIGO
+7) Adicione um background ao mapa:
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}COPIAR CÓDIGO
+8) E por fim, adicione uma estrela antes de todos os itens da lista de benefícios:
+
+.itens:before {
+    content: "★";
+}
+
+Nesta aula, aprendemos:
+
+Seletores avançados CSS
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+main > p {
+}COPIAR CÓDIGO
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+img + p {
+}COPIAR CÓDIGO
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+img ~ p {
+}COPIAR CÓDIGO
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+main p:not(#missao) {
+}COPIAR CÓDIGO
+Como fazer contas com CSS, com a propriedade calc
+
+Chegou a hora de você seguir todos os passos realizados por mim durante esta aula. Caso já tenha feito, excelente. Se ainda não, é importante que você execute o que foi visto nos vídeos para poder continuar com a próxima aula.
+
+Nesta aula, aprendemos:
+
+Como manipular a opacidade dos elementos, com a propriedade CSS opacity
+Como manipular a opacidade das cores
+Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow
+Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow
+
+1) No arquivo style.css, quando o mouse passar em cima da imagem de benefícios, deixe-a um pouco opaca. Adicione uma transição para isso e também um sombreamento na imagem:
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+Nesta aula, aprendemos:
+
+Design responsivo: como ajustar o estilo da nossa página de acordo com o tamanho da tela do dispositivo que a acesse
+Meta tag de Viewport
+Media Queries
+1) Na página index.html, dentro do head, adicione a tag meta viewport, logo abaixo da tag meta charset:
+
+<meta name="viewport" content="width=device-width">COPIAR CÓDIGO
+2) Altere o tamanho do vídeo, para não ser mais fixo e sim ocupar toda a largura da tela, com width="100%":
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>COPIAR CÓDIGO
+3) No arquivo style.css, adicione um estilo diferente para dispositivos de até 480 pixels de largura:
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}

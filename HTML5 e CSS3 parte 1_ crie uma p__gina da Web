@@ -1,0 +1,319 @@
+Nesta aula, aprendemos:
+
+Uma introdução ao HTML e às suas tags
+Como definir o título e os parágrafos de um texto
+Utilizando as tags <h1> e <p>, respectivamente
+Como dar destaque para algumas informações do texto, deixando-as em negrito, utilizando a tag <strong>
+Como dar ênfase para algumas informações do texto, deixando-as em itálico, utilizando a tag <em>
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Crie o arquivo index.html.
+
+2) Copie o conteúdo do texto base, que você baixou no início desta aula, para dentro do arquivo index.html.
+
+3) Marque o título do texto e os seus parágrafos, usando as tags HTML próprias para isso:
+
+<h1>Sobre a Barbearia Alura</h1>
+
+<p>Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. 
+Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+<p>Nossa missão é: "Proporcionar auto-estima e qualidade de vida aos clientes".</p>
+
+<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>COPIAR CÓDIGO
+4) Destaque algumas informações do texto, deixando-as em negrito. Da mesma forma, dê ênfase em alguns pontos do texto, deixando-os em itálico. Use as tags HTML próprias para isso:
+
+<h1>Sobre a Barbearia Alura</h1>
+
+<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+<p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+
+Nesta aula, aprendemos:
+
+A definir a estrutura básica do HTML
+Com a tag DOCTYPE, definimos qual versão do HTML estamos utilizando
+A tag <html>, que marca o conteúdo a ser renderizado no navegador
+Dentro desta tag, podemos definir a linguagem da página, através da propriedade lang
+Como passar as informações do encoding da nossa página para o navegador, através da tag <meta> e da propriedade charset
+Como definir o título de uma página, através da tag <title>
+Como separar as informações que estão sendo passadas para o navegador, utilizando a tag <head>
+Como separar o conteúdo da página, utilizando a tag <body>
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Defina a estrutura básica do HTML index.html, não esquecendo de definir a linguagem da página:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+    Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+
+</html>COPIAR CÓDIGO
+2) Passe as informações de renderização da página para o navegador e defina o seu título:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <title>Barbearia Alura</title>
+
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+    Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</html>COPIAR CÓDIGO
+3) Por fim, separe as informações e conteúdo da página:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barbearia Alura</title>
+    </head>
+    <body>
+        <h1>Sobre a Barbearia Alura</h1>
+
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+        Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+        <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+        O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </body>
+</html>
+
+Nesta aula, aprendemos:
+
+A mexer na apresentação dos textos
+No alinhamento deles (text-align)
+No tamanho da fonte (font-size)
+Na cor de fundo (background)
+Na cor do texto (color)
+CSS inline
+Na linha onde temos a nossa tag, adicionamos a propriedade do CSS
+A tag <style>
+Dentro da tag, podemos colocar marcações de CSS referentes aos elementos que temos no nosso HTML
+A apresentação do CSS com um arquivo externo
+Como funciona o estilo em cascata do CSS
+Como importar um arquivo externo de CSS dentro da nossa página HTML
+Como representar cores no CSS
+Através do nome da cor
+Através do seu hexadecimal
+Através do seu RGB
+Nesta aula, começamos a mexer na apresentação dos textos, no alinhamento deles e no tamanho da fonte. Na próxima, vamos ver como fazer isso em grandes quantidades de texto e de forma muito mais organizada. Te espero lá.
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Na mesma pasta da página index.html, crie o arquivo CSS style.css. Neste arquivo, modifique a cor de fundo do body, centralize os parágrafos e altere a cor das tags strong que estão dentro de tags em:
+
+body {
+    background: #CCCCCC
+}
+
+p {
+    text-align: center;
+}
+
+em strong {
+    color: #FF0000;
+}COPIAR CÓDIGO
+2) Na página index.html, como último elemento do head, importe o CSS style.css:
+
+<link rel="stylesheet" href="style.css">COPIAR CÓDIGO
+3) Centralize o texto do h1:
+
+<h1 style="text-align: center">Sobre a Barbearia Alura</h1>
+
+Nesta aula, aprendemos:
+
+Como reestruturar o nosso código, removendo os CSS inline e colocando-os no arquivo CSS externo
+Como criar um identificador para marcar especificamente um elemento
+Como fazer referência a esse identificador no CSS
+Como adicionar uma imagem à nossa página
+Como ajustar a altura do elemento, através da propriedade height
+Como ajustar a largura do elemento, através da propriedade width
+Como ajustar o espaçamento interno do elemento, através da propriedade padding
+Como ajustar o espaçamento externo do elemento, através da propriedade margin
+Como se comporta um time de front-end hoje em dia
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Remova todo o CSS inline da página index.html.
+
+2) Como primeiro item do body, adicione a imagem banner.jpg (se você ainda não a baixou, faça o seu download aqui). Adicione também um identificador para a tag img:
+
+<img id="banner" src="banner.jpg">COPIAR CÓDIGO
+3) Adicione um identificador para o segundo parágrafo do texto:
+
+<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>COPIAR CÓDIGO
+4) No arquivo style.css, adicione o CSS que foi removido da página index.html, ou seja, alinhe o h1 e os parágrafos no centro da página e aumente a fonte do segundo parágrafo (use o seu identificador para referenciá-lo):
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}COPIAR CÓDIGO
+5) Ainda no arquivo style.css, altere a largura da imagem:
+
+#banner {
+    width: 100%;
+}COPIAR CÓDIGO
+6) O CSS completo ficará da seguinte forma:
+
+body {
+    background: #CCCCCC;
+}
+
+#banner {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}
+
+em strong {
+    color: #FF0000;
+}
+
+Nesta aula, aprendemos:
+
+A trabalhar com listas não-ordenadas e listas ordenadas
+Para cada um dos itens da lista, utilizamos a tag <li>
+O conceito das classes no CSS
+Elas servem para marcar itens, que são repetíveis
+Como referenciar uma classe no CSS
+Divisões de conteúdo, utilizando a tag <div>
+Os comportamentos inline e block
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Na página index.html, envolva o texto em uma div:
+
+<div class="principal">
+    <h1>Sobre a Barbearia Alura</h1>
+
+    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+    Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+    <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</div>COPIAR CÓDIGO
+2) E abaixo da div principal, crie a div beneficios, com a lista de benefícios e a sua imagem:
+
+<div class="beneficios">
+    <h2>Benefícios</h2>
+
+    <ul>
+        <li class="itens">Atendimento aos Clientes</li>
+        <li class="itens">Espaço diferenciado</li>
+        <li class="itens">Localização</li>
+        <li class="itens">Profissionais Qualificados</li>
+    </ul>
+
+    <img src="beneficios.jpg" class="imagembeneficios">
+</div>COPIAR CÓDIGO
+3) No CSS style.css, remova a estilização da cor de fundo do body e passe-a para a div principal. Além disso, dê um espaçamento interno para ela:
+
+body {
+
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}COPIAR CÓDIGO
+4) Mude a fonte dos itens da lista para itálico, estilize a cor de fundo da div beneficios e alinhe o texto do h2 ao centro:
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}COPIAR CÓDIGO
+5) Na lista, modifique o seu display para inline-block e faça ela ser alinhada pela linha de cima. Além disso, altere a sua largura para ser 20% da página e sua margem externa à direita para ser de 15%:
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}COPIAR CÓDIGO
+6) Por fim, altere a largura da imagem dos benefícios:
+
+.imagembeneficios {
+    width: 50%;
+}
+
+Nesta aula, aprendemos:
+
+O conceito de cabeçalho da página e como criá-lo
+Que o cabeçalho da página deve ter mais destaque
+Que não é recomendado criar estilos usando tags
+O ideal é usarmos classes para tudo
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Crie o cabeçalho da página index.html:
+
+<header>
+    <h1 class="titulo-principal">Barbearia Alura</h1>
+</header>COPIAR CÓDIGO
+2) Altere a tag do título Sobre a Barbearia Alura para <h2> e a tag do título Benefícios para <h3>. Além disso, dê uma mesma classe para os dois:
+
+<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>COPIAR CÓDIGO
+E:
+
+<h3 class="titulo-centralizado">Benefícios</h3>COPIAR CÓDIGO
+3) No arquivo style.css, dê um espaçamento interno à esquerda para o cabeçalho, de 20px:
+
+.titulo-principal {
+    padding-left: 20px;
+}COPIAR CÓDIGO
+4) E por fim, remova os estilos das tags h1 e h2 e centralize-os em um único lugar, através da classe titulo-centralizado:
+
+.titulo-centralizado {
+    text-align: center
+}
+

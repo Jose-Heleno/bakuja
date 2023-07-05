@@ -1,0 +1,324 @@
+Nesta aula, vimos:
+
+Uma revisão do conteúdo aprendido no treinamento anterior
+Uma introdução ao projeto do treinamento
+A criação da página de contato
+Um pouco sobre os formulários
+
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Caso você não tenha feito o treinamento anterior ou não tenha mais o projeto, e ainda não baixou o projeto, baixe-o aqui.
+
+2) Renomeie o arquivo style.css para style-home.css.
+
+3) Renomeie o arquivo produtos.css para style.css.
+
+4) Nas páginas produtos.html e index.html, modifique a importação dos arquivos CSS que tiveram seus nomes modificados.
+
+5) Crie a página contato.html, com o seguinte conteúdo:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Barbearia Alura</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <footer>
+            <img src="logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
+    </body>
+</html>
+
+Nesta aula, aprendemos:
+
+A criar um formulário HTML
+A tag que o representa é a <form>
+A tag <input>, para a entrada de dados do usuário
+A criar uma etiqueta para o input, com a tag <label>
+A conectar um input com o seu label
+Colocamos um id para o input e associamos esse id ao atributo for do label
+Alguns tipos de input, como text e submit
+Que label possui o display inline e o input possui display inline-block
+A estilizar o nosso formulário
+Chegou a hora de você pôr em prática o que foi visto na aula. Para isso, execute os passos listados abaixo.
+
+1) Entre o header e o footer da página contato.html, crie o formulário da página:
+
+<main>
+    <form>
+        <label for="nomesobrenome">Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome">
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone">
+
+        <input type="submit" value="Enviar formulário">
+    </form>
+</main>COPIAR CÓDIGO
+2) No arquivo style.css, estilize o formulário:
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+Nesta aula, vimos:
+
+O textarea, para entradas de texto de mais de uma linha
+O input do tipo radio
+Como agrupar vários input do tipo radio, impedindo que mais de um input seja selecionado
+O input do tipo checkbox
+Que podemos criar um input dentro de um label, assim associando-os
+Mais estilizações para a nossa página
+Como funciona a hierarquia no CSS
+O select, que é seletor, um campo de seleção de um item, e o option, que representa cada opção do seletor
+
+1) Na página contato.html, nos input de nome e sobrenome, e-mail e telefone, adicione a classe input-padrao.
+
+2) Após o label/input de telefone, adicione um textarea para o usuário poder digitar uma mensagem. Ele terá 70 colunas e 10 linhas:
+
+<label for="mensagem">Mensagem</label>
+<textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>COPIAR CÓDIGO
+3) Abaixo do textarea de mensagem, crie os input do tipo radio, para a preferência de contato:
+
+<div>
+    <p>Como prefere o nosso contato?</p>
+    <label for="radio-email">
+        <input type="radio" name="contato" value="email" id="radio-email">
+        Email
+    </label>
+
+    <label for="radio-telefone">
+        <input type="radio" name="contato" value="telefone" id="radio-telefone"> 
+        Telefone
+    </label>
+
+    <label for="radio-whatsapp">
+        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+        WhatsApp
+    </label>
+</div>COPIAR CÓDIGO
+4) Abaixo das opções de contato, crie o seletor e suas opções para o horário de atendimento:
+
+<div>
+    <p>Qual horário prefere ser atendido?</p>
+    <select>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+    </select>
+</div>COPIAR CÓDIGO
+5) Após o seletor, crie o checkbox para caso o usuário queira receber as novidades por e-mail:
+
+<label class="checkbox">
+    <input type="checkbox">
+    Gostaria de receber nossas novidades por email?
+</label>COPIAR CÓDIGO
+6) No arquivo style.css, onde há a estilização do label do formulário:
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}COPIAR CÓDIGO
+Adicione esse estilo também para o parágrafo do formulário:
+
+form label, form p {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}COPIAR CÓDIGO
+7) Onde há a estilização do input do formulário:
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}COPIAR CÓDIGO
+Modifique para estilizar a classe input-padrao:
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}COPIAR CÓDIGO
+8) Por fim, estilize o checkbox:
+
+.checkbox {
+    margin: 20px 0;
+}
+
+Nesta aula, aprendemos:
+
+Alguns tipos de inputs para celular: email, tel, number, password, date, datetime, month e search
+Como não permitir que um campo não seja preenchido, através do atributo required
+Como exibir uma sugestão de preenchimento para os campos, através do atributo placeholder
+Como deixar uma opção marcada por padrão nos nossos input radio e checkbox, através do atributo checked
+Como estruturar melhor o nosso código com fieldset e legend
+Como adicionar uma alternativa à imagem, descrevendo-a, com o atributo alt
+
+1) Na página contato.html, adicione um alt para as logos da barbearia, ou seja, para as imagens logo.png e logo-branco.png:
+
+<img src="logo.png" alt="Logo da Barbearia Alura">COPIAR CÓDIGO
+E:
+
+<img src="logo-branco.png" alt="Logo da Barbearia Alura">COPIAR CÓDIGO
+2) Nos input de nome e sobrenome, e-mail, telefone, e no textarea de mensagem, adicione o atributo required.
+
+3) Modifique os tipos dos input de e-mail e telefone para serem email e tel, respectivamente. Além disso, adicione um placeholder para eles:
+
+<label for="email">Email</label>
+<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+<label for="telefone">Telefone</label>
+<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">COPIAR CÓDIGO
+4) No input radio do WhatsApp, adicione o atributo checked:
+
+<label for="radio-whatsapp">
+    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+    WhatsApp
+</label>COPIAR CÓDIGO
+5) Faça o mesmo no checkbox:
+
+<label class="checkbox">
+    <input type="checkbox" checked>
+    Gostaria de receber nossas novidades por email?
+</label>COPIAR CÓDIGO
+6) Modifique as div das opções de contato e do seletor para passarem a ser um fieldset.
+
+7) Modifique os títulos das opções de contato e do seletor, que são parágrafos, para passarem a ser um legend.
+
+8) No arquivo style.css, na estilização do form p, modifique para form legend:
+
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+Nesta aula, aprendemos:
+
+Como estilizar o botão de envio de formulário
+A realizar transições nos nossos elementos, com a propriedade CSS transition
+A modificar o estilo do ponteiro do mouse, quando passar por cima de determinado elemento, através da propriedade CSS cursor
+A realizar transformações nos nossos elementos, como aumentar proporcionalmente a escala de determinado elemento ou rotacioná-lo, através da propriedade CSS transform
+
+1) Na página contato.html, adicione uma classe para o input submit:
+
+<input type="submit" value="Enviar formulário" class="enviar">COPIAR CÓDIGO
+2) No arquivo style.css, estilize o botão:
+
+.enviar {
+    width:40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}COPIAR CÓDIGO
+3) Estilize também quando o usuário passar o mouse por cima do botão:
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+Nesta aula, aprendemos:
+
+A criar uma tabela HTML
+A tag table, que representa a tabela
+A tag tr, que representa a linha da tabela
+A tag td, que representa a célula da tabela
+A tag thead, que representa o cabeçalho da tabela
+A tag tbody, que representa o corpo da tabela
+A tag th, que representa a célula do cabeçalho da tabela
+A tag tfoot, que representa o rodapé da tabela
+A estilizar a tabela
+
+1) Na página contato.html, abaixo do formulário, adicione uma tabela com os dias e horários do funcionamento da barbearia:
+
+<table>
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+    </tbody>
+</table>COPIAR CÓDIGO
+2) No arquivo style.css, estilize a tabela e suas tags:
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+

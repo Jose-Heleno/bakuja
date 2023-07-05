@@ -1,0 +1,55 @@
+
+Esquadro
+PRÓXIMA ATIVIDADE
+
+Já praticamos bastante com retângulos, agora é hora de desenhar uma outra figura. Nesse exercício a tarefa é desenhar um esquadro:
+
+A imagem mostra um esquadro formado por uma reta na horizontal na cor preta, outra na vertical e mais uma reta na diagonal -inclinada- que conecta as duas extremidades. No topo do esquadro temos a numeração “50,50”, na extremidade oposta do lado esquerdo temos a numeração “50,400” e ao lado direito a numeração “400,400”. No interior da figura também temos na extremidade superior os dizeres “100,175”, extremidade inferior na esquerda “100,350” e na extremidade do canto inferior a direita “275,350”
+
+Repare que isso é nada mais do que dois triângulos, um dentro do outro. Lembrando também que desenhar um triângulo é diferente de um retângulo, pois é preciso desenhar linha por linha. Em outras palavras, a API é diferente!
+
+Para desenhar é preciso inicializar um path e mover o pincel para uma posição:
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.beginPath();
+pincel.moveTo(50, 50);
+COPIAR CÓDIGO
+A partir daí podemos desenhar uma linha:
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.beginPath();
+pincel.moveTo(50, 50);
+pincel.lineTo(50, 400);COPIAR CÓDIGO
+Tendo todas as linhas desenhadas, podemos preencher a figura:
+
+pincel.fill();COPIAR CÓDIGO
+Agora é com você!
+
+Como ficará o código completo do esquadro? Escolha a alternativa correta!
+
+Dica: Com as coordenadas em mãos é só mover o pincel para o lugar certo. É importante ressaltar que devemos começar um novo path para cada triânguloO código do esquadro é:
+
+<canvas width="600" height="400"></canvas>
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle='black';
+    pincel.beginPath();
+    pincel.moveTo(50, 50);
+    pincel.lineTo(50, 400);
+    pincel.lineTo(400, 400);
+    pincel.fill();
+
+    pincel.fillStyle='white';
+    pincel.beginPath();
+    pincel.moveTo(100, 175);
+    pincel.lineTo(100, 350);
+    pincel.lineTo(275, 350);
+    pincel.fill();
+</script>
+
+Parabéns! Você aplicou as coordenadas corretamente e conseguiu completar o desafio! Repare que essa API também serve para desenhar outras figuras geométricas, não só triângulos, até podemos desenhar retângulos. Tudo depende para onde você move o pincel!
