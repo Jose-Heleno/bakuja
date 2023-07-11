@@ -19,8 +19,6 @@
     --montserrat: "Montserrat", sans-serif;
 }
 
-
-
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -39,5 +37,4 @@ body {
     padding: 1rem 2rem;
     border: 1px solid var(--branco);
     border-radius: 5px;
-
 }
