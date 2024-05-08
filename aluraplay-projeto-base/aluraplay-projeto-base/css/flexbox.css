@@ -12,6 +12,24 @@
     display: none;
 }
 
+/* Seção Superior */
+
+.superior__secao__container{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
+/* .superior__item {
+    margin-right: 15px ;
+}
+
+.superior__item:last-child {
+    margin-right: 0px;
+} */
+
 /*RODAPE*/
 
 .rodape__container {
@@ -30,7 +48,7 @@
     }
 
     /* RODAPE */
-    
+
     .rodape__container {
         justify-content: space-between;
     }
