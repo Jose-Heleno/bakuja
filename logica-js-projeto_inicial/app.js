@@ -1,7 +1,7 @@
 alert ('Boas vindas ao jogo do número secreto');
-let numeroMaximo = 100;
-let numeroSecreto = Math.floor(Math.random() * numeroMaximo +1);
-console.log (numeroSecreto);
+let numeroMaximo = 100; 
+let numeroSecreto = Math.floor(Math.random /*usado para gerar numero aleatorio*/() * numeroMaximo +1);
+//console.log (numeroSecreto);
 let chute;
 let tentativas = 1;
 
@@ -22,7 +22,7 @@ while (chute != numeroSecreto) {
     }
 }
 
-let palavraTentativa = tentativas >1 ? 'tentativas' : "tentativa";
+let palavraTentativa = tentativas >1 ? 'tentativas' : "tentativa"; //operador ternario
 alert (`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!!!`);
 
 // if (tentativas > 1) {
